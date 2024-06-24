@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+    <link rel="stylesheet" href="flights.css">
+</head>
+<body>
+    
+    
+    <div class="search-section">
+        <h2>Search for Flights, Hotels, and Rental Cars</h2>
+        <div class="search-form">
+            <label for="search-type">Choose a service:</label>
+            <select id="search-type">
+                <option>Flights</option>
+                <option>Hotels</option>
+                <option >Rental Cars</option>
+            </select>
+
+            
+
+            <button id="search">Search</button>
+            <script> document.getElementById('search').addEventListener('click', function() {
+                window.location.href = 'booking.html';
+            });
+            </script>
+        </div>
+    </div>
+
+    <div id="search-results">
+        <h3>Search Results</h3>
+        <ul id="results-list">
+            
+        </ul>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

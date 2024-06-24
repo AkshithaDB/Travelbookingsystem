@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Booking system</title>
+</head>
+<body>
+   <h1> Travel Booking system</h1>
+   <marquee>Your ultimate travel agent </marquee>
+   <div class="form-container">
+   <label for="ddate">Select departure date</label>
+   <input type="date" id="ddate">
+   <label for="rdate">Select return date</label>
+   <input type="date" id="rdate">
+
+   <label for="dlocation"> Select departure location<label>
+    <select>
+        <option>Chennai</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Hyderabad</option>
+    </select>
+   <label for="destination"> Select destination<label>
+    <select>
+        <option>Chennai</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Hyderabad</option>
+    </select>
+    <div>
+    <button id="planTrip"> Plan Trip</button></div>
+</div>
+</body>
+<script> document.getElementById('planTrip').addEventListener('click', function() {
+    window.location.href = 'flights.html';
+});
+</script>
+</html>
